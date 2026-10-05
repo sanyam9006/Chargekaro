@@ -1,0 +1,1443 @@
+{
+  "companies": {
+    "tata-power": {
+      "id": "tata-power",
+      "name": "Tata Power",
+      "shortName": "TATA",
+      "color": "#1a73e8",
+      "connectorTypes": [
+        "CCS2",
+        "CHAdeMO",
+        "Type 2",
+        "AC"
+      ],
+      "description": "India's largest EV charging network"
+    },
+    "ather": {
+      "id": "ather",
+      "name": "Ather Grid",
+      "shortName": "ATHI",
+      "color": "#00c853",
+      "connectorTypes": [
+        "Ather Dot",
+        "Type 2"
+      ],
+      "description": "Fast charging for Ather & other EVs"
+    },
+    "eesl": {
+      "id": "eesl",
+      "name": "EESL",
+      "shortName": "EESL",
+      "color": "#ff6f00",
+      "connectorTypes": [
+        "CCS2",
+        "CHAdeMO",
+        "Type 2"
+      ],
+      "description": "Government-backed charging infra"
+    },
+    "chargezone": {
+      "id": "chargezone",
+      "name": "ChargeZone",
+      "shortName": "CZ",
+      "color": "#e91e63",
+      "connectorTypes": [
+        "CCS2",
+        "CHAdeMO",
+        "Type 2",
+        "AC"
+      ],
+      "description": "Pan-India fast charging network"
+    },
+    "statiq": {
+      "id": "statiq",
+      "name": "Statiq",
+      "shortName": "STQ",
+      "color": "#7c4dff",
+      "connectorTypes": [
+        "CCS2",
+        "Type 2",
+        "AC"
+      ],
+      "description": "Smart EV charging solutions"
+    },
+    "kazam": {
+      "id": "kazam",
+      "name": "Kazam EV",
+      "shortName": "KZM",
+      "color": "#00bcd4",
+      "connectorTypes": [
+        "CCS2",
+        "CHAdeMO",
+        "Type 2"
+      ],
+      "description": "Growing fast charging network"
+    },
+    "fortum": {
+      "id": "fortum",
+      "name": "Fortum Charge",
+      "shortName": "FTM",
+      "color": "#4caf50",
+      "connectorTypes": [
+        "CCS2",
+        "Type 2"
+      ],
+      "description": "Nordic clean energy charging"
+    },
+    "jio-bp": {
+      "id": "jio-bp",
+      "name": "Jio-bp Pulse",
+      "shortName": "JBP",
+      "color": "#0d47a1",
+      "connectorTypes": [
+        "CCS2",
+        "CHAdeMO",
+        "Type 2",
+        "AC"
+      ],
+      "description": "Jio-bp mobility stations"
+    },
+    "adani": {
+      "id": "adani",
+      "name": "Adani Charging",
+      "shortName": "ADN",
+      "color": "#1b5e20",
+      "connectorTypes": [
+        "CCS2",
+        "CHAdeMO",
+        "Type 2"
+      ],
+      "description": "Highway fast charging"
+    },
+    "glida": {
+      "id": "glida",
+      "name": "Glida",
+      "shortName": "GLD",
+      "color": "#f44336",
+      "connectorTypes": [
+        "CCS2",
+        "Type 2",
+        "AC"
+      ],
+      "description": "Smart urban charging network"
+    },
+    "charge+zone": {
+      "id": "charge+zone",
+      "name": "Charge+Zone",
+      "shortName": "C+Z",
+      "color": "#ff9800",
+      "connectorTypes": [
+        "CCS2",
+        "Type 2"
+      ],
+      "description": "Premium highway charging"
+    },
+    "volttic": {
+      "id": "volttic",
+      "name": "Volttic",
+      "shortName": "VLT",
+      "color": "#9c27b0",
+      "connectorTypes": [
+        "CCS2",
+        "CHAdeMO",
+        "Type 2"
+      ],
+      "description": "Community-driven charging"
+    },
+    "ultraviolette": {
+      "id": "ultraviolette",
+      "name": "Ultraviolette",
+      "shortName": "ULV",
+      "color": "#263238",
+      "connectorTypes": [
+        "Type 2",
+        "AC"
+      ],
+      "description": "Performance EV charging"
+    },
+    "bec": {
+      "id": "bec",
+      "name": "BEC Charging",
+      "shortName": "BEC",
+      "color": "#795548",
+      "connectorTypes": [
+        "CCS2",
+        "Type 2"
+      ],
+      "description": "Business EV Charging solutions"
+    },
+    "okaya": {
+      "id": "okaya",
+      "name": "Okaya EV",
+      "shortName": "OKY",
+      "color": "#2196f3",
+      "connectorTypes": [
+        "CCS2",
+        "Type 2",
+        "AC"
+      ],
+      "description": "Made in India charging"
+    }
+  },
+  "stations": [
+    {
+      "id": 1,
+      "name": "Tata Power Supercharger — Connaught Place",
+      "company": "tata-power",
+      "address": "Block A, Connaught Place, New Delhi 110001",
+      "city": "New Delhi",
+      "lat": 28.6315,
+      "lng": 77.2167,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.5,
+      "reviewCount": 234,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 4,
+          "available": 3,
+          "price": 18
+        },
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 2,
+          "available": 1,
+          "price": 18
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 4,
+          "price": 14
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "cafe",
+        "wifi",
+        "parking"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 2,
+      "name": "Ather Grid Hub — Indiranagar",
+      "company": "ather",
+      "address": "100 Feet Road, Indiranagar, Bangalore 560038",
+      "city": "Bangalore",
+      "lat": 12.9784,
+      "lng": 77.6408,
+      "status": "available",
+      "waitTime": 5,
+      "rating": 4.7,
+      "reviewCount": 189,
+      "connectors": [
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 6,
+          "available": 4,
+          "price": 12
+        },
+        {
+          "type": "AC",
+          "power": 7.4,
+          "count": 4,
+          "available": 3,
+          "price": 10
+        }
+      ],
+      "amenities": [
+        "cafe",
+        "wifi",
+        "parking"
+      ],
+      "operatingHours": "6AM–12AM"
+    },
+    {
+      "id": 3,
+      "name": "ChargeZone Ultra — BKC",
+      "company": "chargezone",
+      "address": "Bandra Kurla Complex, Mumbai 400051",
+      "city": "Mumbai",
+      "lat": 19.0596,
+      "lng": 72.8656,
+      "status": "busy",
+      "waitTime": 20,
+      "rating": 4.3,
+      "reviewCount": 312,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 120,
+          "count": 4,
+          "available": 0,
+          "price": 22
+        },
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 4,
+          "available": 2,
+          "price": 18
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 6,
+          "available": 3,
+          "price": 14
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "cafe",
+        "wifi",
+        "parking",
+        "lounge"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 4,
+      "name": "Statiq Smart Station — Cyber City",
+      "company": "statiq",
+      "address": "Cyber City, DLF Phase 2, Gurgaon 122002",
+      "city": "Gurgaon",
+      "lat": 28.4943,
+      "lng": 77.0888,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.6,
+      "reviewCount": 156,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 3,
+          "available": 2,
+          "price": 16
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 4,
+          "price": 12
+        },
+        {
+          "type": "AC",
+          "power": 7.4,
+          "count": 2,
+          "available": 2,
+          "price": 9
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "parking",
+        "cafe"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 5,
+      "name": "EESL Public Charger — Anna Nagar",
+      "company": "eesl",
+      "address": "2nd Avenue, Anna Nagar, Chennai 600040",
+      "city": "Chennai",
+      "lat": 13.0847,
+      "lng": 80.2101,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 3.9,
+      "reviewCount": 87,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 50,
+          "count": 2,
+          "available": 2,
+          "price": 15
+        },
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 1,
+          "available": 1,
+          "price": 15
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 2,
+          "available": 1,
+          "price": 12
+        }
+      ],
+      "amenities": [
+        "parking"
+      ],
+      "operatingHours": "6AM–10PM"
+    },
+    {
+      "id": 6,
+      "name": "Jio-bp Pulse — Mumbai Highway",
+      "company": "jio-bp",
+      "address": "Mumbai-Pune Expressway, Khopoli 410203",
+      "city": "Khopoli",
+      "lat": 18.7876,
+      "lng": 73.3389,
+      "status": "available",
+      "waitTime": 10,
+      "rating": 4.4,
+      "reviewCount": 198,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 150,
+          "count": 4,
+          "available": 2,
+          "price": 24
+        },
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 4,
+          "available": 3,
+          "price": 18
+        },
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 2,
+          "available": 2,
+          "price": 18
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "cafe",
+        "parking",
+        "lounge",
+        "wifi"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 7,
+      "name": "Kazam EV Hub — Salt Lake",
+      "company": "kazam",
+      "address": "Sector V, Salt Lake City, Kolkata 700091",
+      "city": "Kolkata",
+      "lat": 22.5726,
+      "lng": 88.4338,
+      "status": "offline",
+      "waitTime": 0,
+      "rating": 4.1,
+      "reviewCount": 64,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 2,
+          "available": 0,
+          "price": 16
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 3,
+          "available": 0,
+          "price": 12
+        }
+      ],
+      "amenities": [
+        "parking"
+      ],
+      "operatingHours": "8AM–10PM"
+    },
+    {
+      "id": 8,
+      "name": "Fortum Charge Hub — Whitefield",
+      "company": "fortum",
+      "address": "ITPL Road, Whitefield, Bangalore 560066",
+      "city": "Bangalore",
+      "lat": 12.9698,
+      "lng": 77.75,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.2,
+      "reviewCount": 142,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 3,
+          "available": 3,
+          "price": 17
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 2,
+          "price": 13
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "parking",
+        "cafe"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 9,
+      "name": "Adani Supercharger — NH48",
+      "company": "adani",
+      "address": "NH48 Service Road, Near Neemrana, Rajasthan 301705",
+      "city": "Neemrana",
+      "lat": 27.9882,
+      "lng": 76.3875,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4,
+      "reviewCount": 56,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 120,
+          "count": 4,
+          "available": 4,
+          "price": 20
+        },
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 2,
+          "available": 2,
+          "price": 18
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 2,
+          "available": 2,
+          "price": 14
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "cafe",
+        "parking"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 10,
+      "name": "Glida Smart Charge — Koramangala",
+      "company": "glida",
+      "address": "80 Feet Road, Koramangala, Bangalore 560034",
+      "city": "Bangalore",
+      "lat": 12.9352,
+      "lng": 77.6245,
+      "status": "busy",
+      "waitTime": 15,
+      "rating": 4.4,
+      "reviewCount": 201,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 2,
+          "available": 0,
+          "price": 17
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 2,
+          "price": 13
+        },
+        {
+          "type": "AC",
+          "power": 7.4,
+          "count": 2,
+          "available": 1,
+          "price": 10
+        }
+      ],
+      "amenities": [
+        "cafe",
+        "wifi",
+        "parking"
+      ],
+      "operatingHours": "7AM–11PM"
+    },
+    {
+      "id": 11,
+      "name": "Tata Power — Hinjawadi IT Park",
+      "company": "tata-power",
+      "address": "Phase 1, Hinjawadi, Pune 411057",
+      "city": "Pune",
+      "lat": 18.5913,
+      "lng": 73.7389,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.3,
+      "reviewCount": 167,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 4,
+          "available": 3,
+          "price": 17
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 6,
+          "available": 5,
+          "price": 13
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "parking",
+        "wifi"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 12,
+      "name": "Volttic Community Charger — Jubilee Hills",
+      "company": "volttic",
+      "address": "Road No 36, Jubilee Hills, Hyderabad 500033",
+      "city": "Hyderabad",
+      "lat": 17.4325,
+      "lng": 78.4072,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.1,
+      "reviewCount": 93,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 50,
+          "count": 2,
+          "available": 2,
+          "price": 15
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 3,
+          "available": 3,
+          "price": 12
+        }
+      ],
+      "amenities": [
+        "parking",
+        "wifi"
+      ],
+      "operatingHours": "6AM–11PM"
+    },
+    {
+      "id": 13,
+      "name": "ChargeZone Express — Noida Sector 18",
+      "company": "chargezone",
+      "address": "Atta Market, Sector 18, Noida 201301",
+      "city": "Noida",
+      "lat": 28.5688,
+      "lng": 77.3218,
+      "status": "available",
+      "waitTime": 5,
+      "rating": 4.5,
+      "reviewCount": 276,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 120,
+          "count": 2,
+          "available": 1,
+          "price": 22
+        },
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 4,
+          "available": 3,
+          "price": 18
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 4,
+          "price": 14
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "cafe",
+        "wifi",
+        "parking"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 14,
+      "name": "Statiq Station — SG Highway",
+      "company": "statiq",
+      "address": "SG Highway, Ahmedabad 380054",
+      "city": "Ahmedabad",
+      "lat": 23.0225,
+      "lng": 72.5714,
+      "status": "busy",
+      "waitTime": 25,
+      "rating": 4.2,
+      "reviewCount": 118,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 3,
+          "available": 0,
+          "price": 16
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 1,
+          "price": 12
+        }
+      ],
+      "amenities": [
+        "parking",
+        "cafe"
+      ],
+      "operatingHours": "7AM–11PM"
+    },
+    {
+      "id": 15,
+      "name": "Okaya EV Point — Lucknow",
+      "company": "okaya",
+      "address": "Gomti Nagar, Lucknow 226010",
+      "city": "Lucknow",
+      "lat": 26.8563,
+      "lng": 80.9519,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 3.8,
+      "reviewCount": 42,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 50,
+          "count": 2,
+          "available": 2,
+          "price": 14
+        },
+        {
+          "type": "AC",
+          "power": 7.4,
+          "count": 3,
+          "available": 3,
+          "price": 8
+        }
+      ],
+      "amenities": [
+        "parking"
+      ],
+      "operatingHours": "8AM–9PM"
+    },
+    {
+      "id": 16,
+      "name": "BEC Charging — MG Road",
+      "company": "bec",
+      "address": "MG Road, Bangalore 560001",
+      "city": "Bangalore",
+      "lat": 12.9756,
+      "lng": 77.6062,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4,
+      "reviewCount": 76,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 2,
+          "available": 2,
+          "price": 16
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 3,
+          "available": 2,
+          "price": 12
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "parking"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 17,
+      "name": "Jio-bp Pulse — NH65 Hyderabad",
+      "company": "jio-bp",
+      "address": "NH65, Shamshabad, Hyderabad 501218",
+      "city": "Hyderabad",
+      "lat": 17.2403,
+      "lng": 78.4294,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.6,
+      "reviewCount": 213,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 150,
+          "count": 6,
+          "available": 5,
+          "price": 24
+        },
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 4,
+          "available": 4,
+          "price": 18
+        },
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 2,
+          "available": 2,
+          "price": 18
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 3,
+          "price": 14
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "cafe",
+        "wifi",
+        "parking",
+        "lounge"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 18,
+      "name": "Tata Power — Connaught Place Metro",
+      "company": "tata-power",
+      "address": "Rajiv Chowk Metro Station, New Delhi 110001",
+      "city": "New Delhi",
+      "lat": 28.6332,
+      "lng": 77.2196,
+      "status": "available",
+      "waitTime": 10,
+      "rating": 4.4,
+      "reviewCount": 345,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 50,
+          "count": 3,
+          "available": 1,
+          "price": 17
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 6,
+          "available": 4,
+          "price": 13
+        },
+        {
+          "type": "AC",
+          "power": 7.4,
+          "count": 4,
+          "available": 4,
+          "price": 9
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "wifi",
+        "parking"
+      ],
+      "operatingHours": "5AM–12AM"
+    },
+    {
+      "id": 19,
+      "name": "Ather Grid — HSR Layout",
+      "company": "ather",
+      "address": "HSR Layout Sector 7, Bangalore 560102",
+      "city": "Bangalore",
+      "lat": 12.9121,
+      "lng": 77.6446,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.8,
+      "reviewCount": 298,
+      "connectors": [
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 8,
+          "available": 6,
+          "price": 12
+        },
+        {
+          "type": "AC",
+          "power": 7.4,
+          "count": 4,
+          "available": 4,
+          "price": 10
+        }
+      ],
+      "amenities": [
+        "cafe",
+        "wifi",
+        "parking",
+        "lounge"
+      ],
+      "operatingHours": "6AM–12AM"
+    },
+    {
+      "id": 20,
+      "name": "Charge+Zone — NH44 Highway",
+      "company": "charge+zone",
+      "address": "NH44, Sonipat, Haryana 131001",
+      "city": "Sonipat",
+      "lat": 28.9931,
+      "lng": 77.0151,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4,
+      "reviewCount": 67,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 120,
+          "count": 4,
+          "available": 4,
+          "price": 20
+        },
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 2,
+          "available": 2,
+          "price": 16
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "parking",
+        "cafe"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 21,
+      "name": "Kazam Fast Charge — Electronic City",
+      "company": "kazam",
+      "address": "Electronic City Phase 1, Bangalore 560100",
+      "city": "Bangalore",
+      "lat": 12.8399,
+      "lng": 77.677,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.3,
+      "reviewCount": 121,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 3,
+          "available": 2,
+          "price": 16
+        },
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 1,
+          "available": 1,
+          "price": 16
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 4,
+          "price": 12
+        }
+      ],
+      "amenities": [
+        "parking",
+        "wifi"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 22,
+      "name": "Fortum — Powai",
+      "company": "fortum",
+      "address": "Hiranandani Gardens, Powai, Mumbai 400076",
+      "city": "Mumbai",
+      "lat": 19.1176,
+      "lng": 72.906,
+      "status": "busy",
+      "waitTime": 30,
+      "rating": 4.5,
+      "reviewCount": 189,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 2,
+          "available": 0,
+          "price": 18
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 1,
+          "price": 14
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "cafe",
+        "wifi",
+        "parking"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 23,
+      "name": "EESL — Chandigarh Sector 17",
+      "company": "eesl",
+      "address": "Sector 17, Chandigarh 160017",
+      "city": "Chandigarh",
+      "lat": 30.7416,
+      "lng": 76.7738,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 3.7,
+      "reviewCount": 34,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 50,
+          "count": 2,
+          "available": 2,
+          "price": 14
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 2,
+          "available": 2,
+          "price": 11
+        }
+      ],
+      "amenities": [
+        "parking"
+      ],
+      "operatingHours": "7AM–10PM"
+    },
+    {
+      "id": 24,
+      "name": "Statiq — Banjara Hills",
+      "company": "statiq",
+      "address": "Road No 12, Banjara Hills, Hyderabad 500034",
+      "city": "Hyderabad",
+      "lat": 17.4156,
+      "lng": 78.4347,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.3,
+      "reviewCount": 109,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 3,
+          "available": 3,
+          "price": 16
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 3,
+          "price": 12
+        },
+        {
+          "type": "AC",
+          "power": 7.4,
+          "count": 2,
+          "available": 2,
+          "price": 9
+        }
+      ],
+      "amenities": [
+        "cafe",
+        "wifi",
+        "parking"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 25,
+      "name": "Tata Power — Aundh",
+      "company": "tata-power",
+      "address": "Aundh ITI Road, Pune 411007",
+      "city": "Pune",
+      "lat": 18.5584,
+      "lng": 73.8075,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.5,
+      "reviewCount": 198,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 4,
+          "available": 3,
+          "price": 17
+        },
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 2,
+          "available": 2,
+          "price": 17
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 4,
+          "price": 13
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "parking",
+        "wifi",
+        "cafe"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 26,
+      "name": "Adani — Jaipur Ring Road",
+      "company": "adani",
+      "address": "Ring Road, Near Mansarovar, Jaipur 302020",
+      "city": "Jaipur",
+      "lat": 26.8528,
+      "lng": 75.7602,
+      "status": "offline",
+      "waitTime": 0,
+      "rating": 3.5,
+      "reviewCount": 23,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 2,
+          "available": 0,
+          "price": 16
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 2,
+          "available": 0,
+          "price": 12
+        }
+      ],
+      "amenities": [
+        "parking"
+      ],
+      "operatingHours": "8AM–10PM"
+    },
+    {
+      "id": 27,
+      "name": "Ultraviolette Hub — JP Nagar",
+      "company": "ultraviolette",
+      "address": "15th Cross, JP Nagar Phase 6, Bangalore 560078",
+      "city": "Bangalore",
+      "lat": 12.9063,
+      "lng": 77.5857,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.6,
+      "reviewCount": 87,
+      "connectors": [
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 4,
+          "price": 12
+        },
+        {
+          "type": "AC",
+          "power": 7.4,
+          "count": 6,
+          "available": 6,
+          "price": 9
+        }
+      ],
+      "amenities": [
+        "cafe",
+        "wifi",
+        "parking",
+        "lounge"
+      ],
+      "operatingHours": "7AM–11PM"
+    },
+    {
+      "id": 28,
+      "name": "ChargeZone — Andheri West",
+      "company": "chargezone",
+      "address": "Lokhandwala Complex, Andheri West, Mumbai 400053",
+      "city": "Mumbai",
+      "lat": 19.1396,
+      "lng": 72.831,
+      "status": "available",
+      "waitTime": 10,
+      "rating": 4.3,
+      "reviewCount": 256,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 4,
+          "available": 2,
+          "price": 18
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 3,
+          "price": 14
+        },
+        {
+          "type": "AC",
+          "power": 7.4,
+          "count": 2,
+          "available": 2,
+          "price": 10
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "cafe",
+        "wifi",
+        "parking"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 29,
+      "name": "Glida — Gachibowli",
+      "company": "glida",
+      "address": "Gachibowli Financial District, Hyderabad 500032",
+      "city": "Hyderabad",
+      "lat": 17.4435,
+      "lng": 78.3772,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.2,
+      "reviewCount": 78,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 2,
+          "available": 2,
+          "price": 16
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 3,
+          "available": 3,
+          "price": 12
+        }
+      ],
+      "amenities": [
+        "parking",
+        "wifi"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 30,
+      "name": "Tata Power — Marathahalli",
+      "company": "tata-power",
+      "address": "Marathahalli Bridge, Bangalore 560037",
+      "city": "Bangalore",
+      "lat": 12.9563,
+      "lng": 77.701,
+      "status": "available",
+      "waitTime": 5,
+      "rating": 4.4,
+      "reviewCount": 312,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 4,
+          "available": 2,
+          "price": 17
+        },
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 2,
+          "available": 2,
+          "price": 17
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 6,
+          "available": 5,
+          "price": 13
+        },
+        {
+          "type": "AC",
+          "power": 7.4,
+          "count": 4,
+          "available": 4,
+          "price": 9
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "cafe",
+        "wifi",
+        "parking"
+      ],
+      "operatingHours": "24/7"
+    },
+    {
+      "id": 31,
+      "name": "Volttic — Koregaon Park",
+      "company": "volttic",
+      "address": "North Main Road, Koregaon Park, Pune 411001",
+      "city": "Pune",
+      "lat": 18.5362,
+      "lng": 73.8935,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4,
+      "reviewCount": 45,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 50,
+          "count": 2,
+          "available": 2,
+          "price": 15
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 3,
+          "available": 3,
+          "price": 12
+        }
+      ],
+      "amenities": [
+        "parking",
+        "cafe"
+      ],
+      "operatingHours": "7AM–11PM"
+    },
+    {
+      "id": 32,
+      "name": "Jio-bp Pulse — Delhi-Jaipur Expressway",
+      "company": "jio-bp",
+      "address": "NH48, Manesar, Gurgaon 122051",
+      "city": "Gurgaon",
+      "lat": 28.359,
+      "lng": 76.9365,
+      "status": "available",
+      "waitTime": 0,
+      "rating": 4.7,
+      "reviewCount": 334,
+      "connectors": [
+        {
+          "type": "CCS2",
+          "power": 150,
+          "count": 6,
+          "available": 5,
+          "price": 24
+        },
+        {
+          "type": "CCS2",
+          "power": 60,
+          "count": 4,
+          "available": 4,
+          "price": 18
+        },
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 2,
+          "available": 2,
+          "price": 18
+        },
+        {
+          "type": "Type 2",
+          "power": 22,
+          "count": 4,
+          "available": 4,
+          "price": 14
+        }
+      ],
+      "amenities": [
+        "restroom",
+        "cafe",
+        "wifi",
+        "parking",
+        "lounge"
+      ],
+      "operatingHours": "24/7"
+    }
+  ],
+  "reviews": [],
+  "favorites": [],
+  "_meta": {
+    "nextReviewId": 1,
+    "nextFavoriteId": 1
+  }
+}

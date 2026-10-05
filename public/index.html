@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="ChargeKaro — Find any EV charging station in India. All networks, one app. Real-time availability, wait times, and navigation.">
+    <meta name="theme-color" content="#0a0e17">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ChargeKaro">
+
+    <title>ChargeKaro — India's Unified EV Charging Hub</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="app">
+        <!-- Navbar -->
+        <nav class="navbar" id="navbar">
+            <div class="navbar-container">
+                <a href="#/" class="navbar-brand">
+                    <div class="brand-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M16.5 2L6 16H14L11.5 26L22 12H14L16.5 2Z" fill="url(#bolt-grad)" stroke="url(#bolt-grad)" stroke-width="1.5" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="bolt-grad" x1="6" y1="2" x2="22" y2="26" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00f5a0"/>
+                                    <stop offset="1" stop-color="#00d9f5"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="brand-text">Charge<span class="brand-accent">Karo</span></span>
+                </a>
+
+                <div class="navbar-search" id="navbar-search">
+                    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+                    </svg>
+                    <input type="text" id="search-input" placeholder="Search station, city, or company..." autocomplete="off">
+                    <div class="search-results" id="search-results"></div>
+                </div>
+
+                <div class="navbar-actions">
+                    <a href="#/stations" class="nav-link desktop-only" data-route="stations">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                        Stations
+                    </a>
+                    <a href="#/favorites" class="nav-link desktop-only" data-route="favorites">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        Favorites
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="main-content"></main>
+
+        <!-- Bottom Navigation (Mobile) -->
+        <nav class="bottom-nav" id="bottom-nav">
+            <a href="#/" class="bottom-nav-item active" data-route="home">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Map</span>
+            </a>
+            <a href="#/stations" class="bottom-nav-item" data-route="stations">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                <span>Stations</span>
+            </a>
+            <a href="#/favorites" class="bottom-nav-item" data-route="favorites">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span>Saved</span>
+            </a>
+            <a href="#/about" class="bottom-nav-item" data-route="about">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                <span>About</span>
+            </a>
+        </nav>
+
+        <!-- Install PWA Prompt -->
+        <div class="install-prompt" id="install-prompt" style="display:none;">
+            <div class="install-prompt-content">
+                <div class="install-icon">
+                    <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+                        <path d="M16.5 2L6 16H14L11.5 26L22 12H14L16.5 2Z" fill="url(#bolt-grad2)" stroke="url(#bolt-grad2)" stroke-width="1.5" stroke-linejoin="round"/>
+                        <defs><linearGradient id="bolt-grad2" x1="6" y1="2" x2="22" y2="26"><stop stop-color="#00f5a0"/><stop offset="1" stop-color="#00d9f5"/></linearGradient></defs>
+                    </svg>
+                </div>
+                <div>
+                    <strong>Install ChargeKaro</strong>
+                    <p>Add to your home screen for quick access</p>
+                </div>
+                <button id="install-btn" class="btn btn-primary btn-sm">Install</button>
+                <button id="install-dismiss" class="btn-close">&times;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- App JS -->
+    <script src="js/api.js"></script>
+    <script src="js/data/companies.js"></script>
+    <script src="js/data/stations.js"></script>
+    <script src="js/components/StatusBadge.js"></script>
+    <script src="js/components/StationCard.js"></script>
+    <script src="js/components/MapView.js"></script>
+    <script src="js/components/FilterPanel.js"></script>
+    <script src="js/components/StationDetail.js"></script>
+    <script src="js/pages/Home.js"></script>
+    <script src="js/pages/StationList.js"></script>
+    <script src="js/pages/StationPage.js"></script>
+    <script src="js/pages/Favorites.js"></script>
+    <script src="js/pages/About.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

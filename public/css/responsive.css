@@ -1,0 +1,178 @@
+/* ============================================
+   Responsive Styles — Mobile First
+   ============================================ */
+
+/* Tablets and below */
+@media (max-width: 1024px) {
+    .stations-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-panel {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        bottom: 72px;
+        z-index: var(--z-panel);
+        border-radius: 0;
+        overflow-y: auto;
+        transform: translateX(-100%);
+        transition: transform var(--transition-slow);
+    }
+
+    .filter-panel.open {
+        transform: translateX(0);
+    }
+
+    .filter-toggle-btn {
+        display: inline-flex !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .bottom-nav {
+        display: flex;
+    }
+
+    #main-content {
+        padding-bottom: 80px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hero-stats {
+        gap: var(--space-lg);
+    }
+
+    .hero-stat-value {
+        font-size: 1.5rem;
+    }
+
+    .hero-search {
+        max-width: 100%;
+    }
+
+    .hero-search .btn span {
+        display: none;
+    }
+
+    .map-wrapper {
+        height: 350px;
+        border-radius: var(--radius-lg);
+    }
+
+    .stations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .companies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-search {
+        display: none;
+    }
+
+    .navbar-container {
+        padding: 0 var(--space-md);
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .detail-actions {
+        flex-direction: column;
+    }
+
+    .detail-actions .btn {
+        width: 100%;
+    }
+
+    .station-detail-header {
+        flex-wrap: wrap;
+    }
+
+    .amenities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Mobile map search overlay */
+    .mobile-search-overlay {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        padding: var(--space-md);
+        z-index: var(--z-panel);
+    }
+
+    .mobile-search-overlay input {
+        width: 100%;
+        padding: 14px 16px 14px 42px;
+        background: var(--bg-glass);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        color: var(--text-primary);
+        font-size: 0.95rem;
+        box-shadow: var(--shadow-md);
+    }
+
+    .install-prompt {
+        bottom: 88px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .station-card {
+        padding: var(--space-md);
+    }
+
+    .companies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Desktop enhancements */
+@media (min-width: 1025px) {
+    .bottom-nav {
+        display: none !important;
+    }
+
+    #main-content {
+        padding-bottom: 0;
+    }
+
+    .filter-toggle-btn {
+        display: none !important;
+    }
+}

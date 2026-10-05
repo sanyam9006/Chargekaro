@@ -1,0 +1,17 @@
+{
+    "name": "ChargeKaro",
+    "short_name": "ChargeKaro",
+    "description": "Find any EV charging station in India. All networks, one app.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0e17",
+    "theme_color": "#0a0e17",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230a0e17' width='100' height='100' rx='20'/><path d='M58 10L22 56h28l-8 34 36-46H50l8-34z' fill='url(%23g)'/><defs><linearGradient id='g' x1='22' y1='10' x2='78' y2='90'><stop stop-color='%2300f5a0'/><stop offset='1' stop-color='%2300d9f5'/></linearGradient></defs></svg>",
+            "sizes": "192x192",
+            "type": "image/svg+xml"
+        }
+    ]
+}
